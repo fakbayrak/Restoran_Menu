@@ -104,4 +104,62 @@ body {
     font-size: 1.2em; 
     flex-shrink: 0; /* Fiyatın daralmasını engeller */
     margin-left: 15px; /* Açıklamadan biraz uzaklaştır */
+
+}
+/* ========================================= */
+/* 📱 DUYARLI TASARIM (RESPONSIVE) KURALLARI */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    /* Genel Ayarlar: 768px ve altı (çoğu tablet ve telefon) */
+
+    .menu-container {
+        /* Telefonlarda kenar boşluğunu azalt */
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .main-header h1 {
+        /* Restoran adını telefonlarda küçült */
+        font-size: 1.8em;
+    }
+
+    .logo {
+        /* Logoyu biraz küçült */
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Menü Öğeleri: İçerik ve Fiyatı Alt Alta Getir */
+    .menu-item {
+        /* Flex yapısını alt alta hizalamak için değiştir */
+        flex-direction: column; 
+        align-items: flex-start; /* Sola hizala */
+        padding: 10px 0;
+    }
+
+    .item-name {
+        /* Ürün adını daha belirgin yap */
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    .item-description {
+        /* Açıklama metnini tüm genişliği kullanması için ayarla */
+        max-width: 100%; 
+        font-size: 0.85em;
+        margin-left: 0;
+    }
+
+    .item-price {
+        /* Fiyatı alt satıra, sağa veya sola yasla */
+        font-size: 1.1em;
+        color: #a0522d;
+        align-self: flex-end; /* Fiyatı öğenin sağ alt köşesine yasla */
+        margin-top: -30px; /* Fiyatı yukarı çekerek boşluğu azalt */
+    }
+
+    .menu-category h3 {
+        font-size: 1.5em;
+    }
 }
