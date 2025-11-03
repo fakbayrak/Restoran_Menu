@@ -134,7 +134,7 @@ body {
     .menu-item {
         /* Flex yapısını alt alta hizalamak için değiştir */
         flex-direction: column; 
-        align-items: flex-start; /* Sola hizala */
+        align-items: stretch; /* Sola hizala */
         padding: 10px 0;
     }
 
@@ -155,16 +155,20 @@ body {
         /* Fiyatı alt satıra, sağa veya sola yasla */
         font-size: 1.1em;
         color: #a0522d;
-        /* Fiyatı tüm satırı kaplaması için ayarla ve metni sağa yasla */
-    align-self: stretch; /* Gerekli değil ama güvenli */
-    text-align: right;   /* Fiyatı sağ kenara yasla */
-    margin-top: 5px;     /* Açıklamadan sonra biraz boşluk bırak */
-    margin-left: 0;      /* Gerekli, genel kuraldan gelen marjini sıfırla */
 
+        font-weight: bold;
+        text-align: right; /* Metni menü alanının sağına yasla */
+        width: 100%;       /* Fiyat satırının tam genişlikte olmasını sağla */
+        margin-top: 5px;   /* Metin ile arasında boşluk bırak */
+
+    }
+    .menu-item > div {
+        width: 100%; 
     }
 
     .menu-category h3 {
         font-size: 1.5em;
     }
 }
+
 
