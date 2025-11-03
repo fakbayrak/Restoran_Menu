@@ -155,11 +155,16 @@ body {
         /* Fiyatı alt satıra, sağa veya sola yasla */
         font-size: 1.1em;
         color: #a0522d;
-        align-self: flex-end; /* Fiyatı öğenin sağ alt köşesine yasla */
-        margin-top: -30px; /* Fiyatı yukarı çekerek boşluğu azalt */
+        /* Fiyatı tüm satırı kaplaması için ayarla ve metni sağa yasla */
+    align-self: stretch; /* Gerekli değil ama güvenli */
+    text-align: right;   /* Fiyatı sağ kenara yasla */
+    margin-top: 5px;     /* Açıklamadan sonra biraz boşluk bırak */
+    margin-left: 0;      /* Gerekli, genel kuraldan gelen marjini sıfırla */
+
     }
 
     .menu-category h3 {
         font-size: 1.5em;
     }
 }
+
