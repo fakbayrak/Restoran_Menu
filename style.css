@@ -1,19 +1,19 @@
-/* Temel Sıfırlama ve Font */
+
 body {
-    font-family: 'Arial', sans-serif; /* Okunması kolay bir font */
+    font-family: 'Arial', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Açık gri arka plan */
-    color: #333; /* Koyu gri yazı rengi */
+    background-color: #f4f4f4; 
+    color: #333; 
 }
 
-/* Üst Kısım (Header) Stili */
+
 .main-header {
-    background-color: #a0522d; /* Kahverengi tonu, restoran temasına uygun */
+    background-color: 
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .header-content {
@@ -22,9 +22,9 @@ body {
 }
 
 .logo {
-    width: 80px; /* Logo boyutu */
+    width: 80px; 
     height: 80px;
-    border-radius: 8px; /* Logoyu yuvarlak yapmak için */
+    border-radius: 8px; 
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -35,11 +35,11 @@ body {
     letter-spacing: 2px;
 }
 
-/* Menü Kapsayıcısı */
+
 .menu-container {
     max-width: 800px;
     margin: 30px auto;
-    padding: 20px 40px; /* Kenar boşlukları eklendi */
+    padding: 20px 40px; 
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -48,37 +48,37 @@ body {
 .menu-container h2 {
     text-align: center;
     color: #a0522d;
-    border-bottom: 2px solid #a0522d; /* Ana başlık için daha kalın çizgi */
+    border-bottom: 2px solid #a0522d;
     padding-bottom: 10px;
     margin-bottom: 30px;
     font-size: 2.2em;
 }
 
-/* Menü Kategorisi Stili */
+
 .menu-category {
     margin-bottom: 40px;
 }
 
 .menu-category h3 {
     font-size: 1.8em;
-    color: #4CAF50; /* Kategori başlığı rengi */
+    color: #4CAF50; 
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-/* Menü Öğesi Stili (Flex ile hizalama) */
+
 .menu-item {
     display: flex; 
     justify-content: space-between; 
-    align-items: flex-start; /* İçerik ve fiyatı üste hizalar */
+    align-items: flex-start;
     padding: 15px 0; 
     border-bottom: 1px dashed #eee; 
     transition: background-color 0.3s;
 }
 
 .menu-item:hover {
-    background-color: #fffaf0; /* Vurgu rengi */
+    background-color: #fffaf0; 
 }
 
 /* Ürün Adı Stili */
@@ -88,78 +88,76 @@ body {
     display: block; 
 }
 
-/* Ürün Açıklaması Stili */
+
 .item-description {
     margin: 5px 0 0 0; 
     font-size: 0.9em; 
-    color: #777; /* Açık gri ve silik renk */
+    color: #777; 
     line-height: 1.4;
-    max-width: 85%; /* Fiyat sütununa karışmaması için */
+    max-width: 85%; 
 }
 
-/* Fiyat Stili */
+
 .item-price {
     color: #a0522d;
     font-weight: bold;
     font-size: 1.2em; 
-    flex-shrink: 0; /* Fiyatın daralmasını engeller */
-    margin-left: 15px; /* Açıklamadan biraz uzaklaştır */
+    flex-shrink: 0; 
+    margin-left: 15px; 
 
 }
-/* ========================================= */
-/* 📱 DUYARLI TASARIM (RESPONSIVE) KURALLARI */
-/* ========================================= */
+
 
 @media (max-width: 768px) {
-    /* Genel Ayarlar: 768px ve altı (çoğu tablet ve telefon) */
+
 
     .menu-container {
-        /* Telefonlarda kenar boşluğunu azalt */
+    
         margin: 20px 10px;
         padding: 15px;
     }
 
     .main-header h1 {
-        /* Restoran adını telefonlarda küçült */
+
         font-size: 1.8em;
     }
 
     .logo {
-        /* Logoyu biraz küçült */
+
         width: 60px;
         height: 60px;
     }
 
-    /* Menü Öğeleri: İçerik ve Fiyatı Alt Alta Getir */
+
     .menu-item {
-        /* Flex yapısını alt alta hizalamak için değiştir */
+
         flex-direction: column; 
-        align-items: stretch; /* Sola hizala */
+        align-items: stretch;
         padding: 10px 0;
     }
 
     .item-name {
-        /* Ürün adını daha belirgin yap */
+ 
         font-size: 1.2em;
         margin-bottom: 5px;
     }
 
     .item-description {
-        /* Açıklama metnini tüm genişliği kullanması için ayarla */
+ 
         max-width: 100%; 
         font-size: 0.85em;
         margin-left: 0;
     }
 
     .item-price {
-        /* Fiyatı alt satıra, sağa veya sola yasla */
+
         font-size: 1.1em;
         color: #a0522d;
 
         font-weight: bold;
-        text-align: right; /* Metni menü alanının sağına yasla */
-        width: 100%;       /* Fiyat satırının tam genişlikte olmasını sağla */
-        margin-top: 5px;   /* Metin ile arasında boşluk bırak */
+        text-align: right; 
+        width: 100%;       
+        margin-top: 5px;   
 
     }
     .menu-item > div {
@@ -170,5 +168,6 @@ body {
         font-size: 1.5em;
     }
 }
+
 
 
